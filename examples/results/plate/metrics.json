@@ -1,0 +1,101 @@
+{
+  "status": "geometric reconstruction; robot feasibility unverified",
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.2",
+    "trimesh": "4.4.9",
+    "networkx": "3.3",
+    "cad-to-robot": "0.1.0"
+  },
+  "input_sha256": "5d58091878906ed8dc1981cf9a32bdcf02afd9831475c6ef0dc0a5ac0cbf1273",
+  "input_units": "mm",
+  "output_units": "mm",
+  "section_z_mm": 0.0,
+  "spacing_limit_mm": 5,
+  "path_count": 1,
+  "waypoint_counts": [
+    67
+  ],
+  "lengths_mm": [
+    320.0
+  ],
+  "max_steps_mm": [
+    5.000000000000007
+  ],
+  "mesh_faces_after_cleanup": 12,
+  "T_base_workpiece": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      300.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      100.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_flange_tcp": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      50.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "tool_orientation_workpiece_abc_deg": [
+    0,
+    0,
+    180
+  ],
+  "flange_bounds_mm": [
+    [
+      250.0,
+      -29.999999999999993,
+      150.0
+    ],
+    [
+      350.0,
+      30.000000000000007,
+      150.0
+    ]
+  ],
+  "collision_checked": false,
+  "inverse_kinematics_checked": false,
+  "singularities_checked": false,
+  "controller_validated": false
+}

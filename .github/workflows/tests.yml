@@ -1,0 +1,19 @@
+name: Tests and demonstration
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install --no-deps -e .
+      - run: python -m pytest -q
+      - run: python examples/generate_fixtures.py
+      - run: cad-to-robot examples/meshes/plate.stl --units mm --z 0 --output output/ci
+      - uses: actions/upload-artifact@v4
+        with:
+          name: geometric-demo
+          path: output/ci/
